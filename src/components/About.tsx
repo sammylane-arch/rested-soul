@@ -101,12 +101,12 @@ export default function About() {
         {/* Credentials panel */}
         <aside className="about__credentials" aria-label="Therapist credentials">
           <div className="about__credentials-card">
-            {/* Avatar placeholder */}
-            <div className="about__avatar" aria-label="Photo of Steph">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="24" cy="19" r="9" fill="#7057C6" opacity="0.35"/>
-                <path d="M8 42c0-8.8 7.2-16 16-16s16 7.2 16 16" fill="#7057C6" opacity="0.2"/>
-              </svg>
+            <div className="about__avatar">
+              <img
+                src="/steph_1.jpg"
+                alt="Steph, Qualified Holistic Therapist at Rested Soul"
+                className="about__avatar-photo"
+              />
               <p className="about__avatar-name">Steph</p>
               <p className="about__avatar-label">Qualified Holistic Therapist</p>
             </div>
