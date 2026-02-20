@@ -1,0 +1,129 @@
+.treatments {
+  background: var(--beige);
+}
+
+.treatments__header {
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+/* ── Grid ─────────────────────────────────────────────────── */
+.treatments__grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ── Card ─────────────────────────────────────────────────── */
+.treatment-card {
+  background: var(--cream);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.treatment-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.treatment-card__icon-wrap {
+  width: 56px;
+  height: 56px;
+  background: var(--green-light);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.treatment-card__body {
+  flex: 1;
+}
+
+.treatment-card__tagline {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 0.4rem;
+}
+
+.treatment-card__name {
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.treatment-card__desc {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.treatment-card__meta {
+  margin-bottom: 1.5rem;
+}
+
+.treatment-card__duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--faint);
+}
+
+/* ── "Learn more" link ────────────────────────────────────── */
+.treatment-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--sage);
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease, gap 0.2s ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.treatment-card__link:hover {
+  color: var(--sage-dark);
+  border-bottom-color: var(--sage-dark);
+  gap: 0.6rem;
+}
+
+/* ── Pricing note ─────────────────────────────────────────── */
+.treatments__pricing-note {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--faint);
+  font-style: italic;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .treatments__grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 480px) {
+  .treatment-card {
+    padding: 1.5rem;
+  }
+}

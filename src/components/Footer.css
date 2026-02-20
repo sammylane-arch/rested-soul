@@ -1,0 +1,133 @@
+.site-footer {
+  background: var(--ink);
+  color: rgba(253, 250, 246, 0.75);
+}
+
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 3rem;
+  padding-block: 4rem;
+}
+
+/* ── Brand ────────────────────────────────────────────────── */
+.site-footer__logo {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.site-footer__logo-img {
+  height: 88px;
+  width: auto;
+  display: block;
+  /* The logo has a light background — blend it into the dark footer */
+  mix-blend-mode: lighten;
+  opacity: 0.9;
+}
+
+.site-footer__tagline {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgba(253, 250, 246, 0.55);
+  max-width: 260px;
+}
+
+/* ── Column titles ────────────────────────────────────────── */
+.site-footer__col-title {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(253, 250, 246, 0.5);
+  margin-bottom: 1rem;
+}
+
+/* ── Address ──────────────────────────────────────────────── */
+.site-footer__address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ── Nav links ────────────────────────────────────────────── */
+.site-footer__links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer__links a {
+  font-size: 0.875rem;
+  color: rgba(253, 250, 246, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer__links a:hover {
+  color: var(--cream);
+}
+
+/* ── Bottom bar ───────────────────────────────────────────── */
+.site-footer__bottom {
+  border-top: 1px solid rgba(253, 250, 246, 0.08);
+}
+
+.site-footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.site-footer__copyright {
+  font-size: 0.8rem;
+  color: rgba(253, 250, 246, 0.4);
+}
+
+.site-footer__legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-footer__legal a {
+  font-size: 0.8rem;
+  color: rgba(253, 250, 246, 0.4);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer__legal a:hover {
+  color: rgba(253, 250, 246, 0.75);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .site-footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+
+  .site-footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,202 @@
+/* ============================================================
+   RESTED SOUL — Global Styles
+   Palette (matched to brand logo):
+     --cream:      #FDFAF6  (page background)
+     --beige:      #F0E9DC  (card backgrounds)
+     --taupe:      #C4B5A5  (borders, dividers)
+     --sage:       #7057C6  (primary CTA — brand purple)
+     --sage-dark:  #5A40AD  (hover state)
+     --sage-light: #EDEAFA  (light purple tint)
+     --green:      #4DB08C  (secondary accent — logo leaf green)
+     --green-dark: #3A9070
+     --green-light:#E5F5F0
+     --ink:        #3D3530  (headings)
+     --muted:      #6B5E57  (body text)
+     --faint:      #9A8B84  (captions, labels)
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream:      #FDFAF6;
+  --beige:      #F0E9DC;
+  --taupe:      #C4B5A5;
+  --sage:       #7057C6;
+  --sage-dark:  #5A40AD;
+  --sage-light: #EDEAFA;
+  --green:      #4DB08C;
+  --green-dark: #3A9070;
+  --green-light:#E5F5F0;
+  --ink:        #3D3530;
+  --muted:      #6B5E57;
+  --faint:      #9A8B84;
+
+  --radius-sm:  8px;
+  --radius-md:  16px;
+  --radius-lg:  24px;
+
+  --shadow-sm:  0 2px 8px rgba(61, 53, 48, 0.06);
+  --shadow-md:  0 4px 20px rgba(61, 53, 48, 0.10);
+  --shadow-lg:  0 8px 40px rgba(61, 53, 48, 0.12);
+
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Inter', system-ui, -apple-system, sans-serif;
+
+  --max-w: 1100px;
+  --section-gap: 5rem;
+  --header-h: 70px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--cream);
+  color: var(--muted);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Focus styles ─────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--sage);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Typography ───────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--ink);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+h2 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); }
+h3 { font-size: clamp(1.3rem, 2vw, 1.6rem); }
+
+p { color: var(--muted); }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Layout helpers ───────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.section {
+  padding-block: var(--section-gap);
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 100px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease,
+    box-shadow 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+  background: var(--sage);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(112, 87, 198, 0.30);
+}
+
+.btn-primary:hover {
+  background: var(--sage-dark);
+  box-shadow: 0 4px 18px rgba(112, 87, 198, 0.40);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--taupe);
+}
+
+.btn-outline:hover {
+  border-color: var(--sage);
+  color: var(--sage-dark);
+  background: var(--sage-light);
+}
+
+/* ── Section headings ─────────────────────────────────────── */
+.section-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 0.75rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-subheading {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 540px;
+}
+
+/* ── Skip link (accessibility) ────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  z-index: 999;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--taupe); border-radius: 3px; }
