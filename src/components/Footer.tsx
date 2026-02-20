@@ -18,7 +18,7 @@ export default function Footer() {
             />
           </a>
           <p className="site-footer__tagline">
-            Personalised massage therapy to help you feel your best.
+            A safe, soothing space to relax, recharge, and feel cared for.
           </p>
         </div>
 

@@ -11,9 +11,10 @@ export default function Booking() {
             Online booking coming soon
           </h2>
           <p className="section-subheading">
-            We're setting up our online booking system to make scheduling as
-            easy as possible. In the meantime, please get in touch directly —
-            we'd love to hear from you.
+            We're setting up our online booking system to make things as easy
+            as possible. In the meantime, if you're curious about booking a
+            session or just want to ask a question, don't hesitate to get in
+            touch — we'd love to hear from you.
           </p>
         </div>
 

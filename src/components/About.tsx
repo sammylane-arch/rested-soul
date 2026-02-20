@@ -1,7 +1,7 @@
 import './About.css'
 
 const credentials = [
-  { label: 'Qualified since', value: '[Year]' },
+  { label: 'Qualified since', value: 'June 2024' },
   { label: 'Qualification', value: '[e.g. BTEC Level 5 / ITEC Diploma]' },
   { label: 'Member of', value: '[e.g. Federation of Holistic Therapists]' },
   { label: 'Insurance', value: 'Fully insured' },
@@ -38,7 +38,7 @@ const passions = [
         <path d="M4.5 11.5A6 6 0 0 1 16 7.32V3l4 4-4 4V7.98A4 4 0 1 0 8.5 11.5H4.5zm15 1A6 6 0 0 1 8 16.68V21l-4-4 4-4v3.02A4 4 0 1 0 15.5 12.5h4z" fill="currentColor"/>
       </svg>
     ),
-    label: 'Animals',
+    label: 'Hunter & Animals',
   },
 ]
 
@@ -55,32 +55,33 @@ export default function About() {
           <p className="about__title">Qualified Holistic Therapist</p>
 
           <p className="about__intro">
-            Hi, I'm Steph — a holistic therapist with{' '}
-            <strong>[X] years of experience</strong> who believes deeply in the
-            power of healing through touch. My work is built around creating
-            treatments that are calm, intuitive, and genuinely tailored to you.
+            Hi, I'm Steph — a professionally qualified massage therapist with
+            a lifelong love for healing and the power of therapeutic touch.
+            From a young age I felt a natural pull towards this work, but like
+            many people, self-doubt held me back for a while. That all changed
+            in June 2024, when I finally followed my heart and qualified in
+            massage.
           </p>
 
           <p>
             I trained at <em>[training institution]</em> and hold a{' '}
-            <em>[qualification level]</em> in holistic therapy. Over the years
-            I've worked with clients from all walks of life — from those
-            carrying the quiet weight of everyday stress to people seeking
-            support for more persistent physical tension.
+            <em>[qualification level]</em>. Since then I've been building my
+            experience, growing my client base, and expanding my qualifications
+            — and I'm only just getting started.
           </p>
 
           <p>
-            My approach is shaped by a genuine love of wellbeing in its
-            broadest sense. I draw on an appreciation for mindfulness,
-            movement, and the restorative qualities of the natural world to
-            inform how I work — always listening, always adapting, never
-            prescriptive.
+            My approach is intuitive and always tailored to you. Whether you're
+            looking to release physical tension, calm your mind, or simply
+            carve out some time for yourself, I'll create a safe, soothing
+            space where you can fully relax, recharge, and feel cared for.
           </p>
 
           <p>
-            Every session begins with a conversation. What you need on the
-            day guides everything — there's no rigid formula, just thoughtful,
-            attentive care.
+            Outside the treatment room you'll find me meditating, working out,
+            spending time in nature, or on mum duties to my furbaby Hunter —
+            practices that keep me grounded and shape the care I bring to every
+            session.
           </p>
 
           <ul className="about__passions" role="list" aria-label="Steph's interests and values">

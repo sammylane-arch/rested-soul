@@ -47,9 +47,9 @@ export default function Hero() {
           </h1>
 
           <p className="hero__subheading">
-            Personalised massage treatments designed to ease tension, restore
-            balance, and leave you feeling genuinely renewed. Every session is
-            tailored to you.
+            A safe, soothing space to relax, recharge, and feel genuinely
+            cared for. Every session is tailored to you — led by what you need
+            on the day.
           </p>
 
           <div className="hero__actions">
