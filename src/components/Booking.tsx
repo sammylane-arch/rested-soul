@@ -71,11 +71,11 @@ export default function Booking() {
             </div>
             <p className="booking__contact-label">Email us</p>
             <a
-              href="mailto:[EMAIL]"
+              href="mailto:restedsoul333@hotmail.com"
               className="booking__contact-value"
-              aria-label="Email Rested Soul"
+              aria-label="Email Rested Soul at restedsoul333@hotmail.com"
             >
-              [hello@restedsoul.co.uk]
+              restedsoul333@hotmail.com
             </a>
             <p className="booking__contact-note">
               Prefer email? Send us a message and we'll get back to you promptly.
