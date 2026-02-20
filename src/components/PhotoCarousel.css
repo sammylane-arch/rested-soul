@@ -5,7 +5,7 @@
 /* ── Stage ─────────────────────────────────────────────────── */
 .carousel__stage {
   position: relative;
-  max-width: 780px;
+  max-width: 560px;
   margin: 0 auto;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -19,7 +19,7 @@
 
 .carousel__img {
   width: 100%;
-  height: 520px;
+  height: 380px;
   object-fit: cover;
   object-position: center top;
   display: block;
@@ -82,7 +82,7 @@
 /* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .carousel__img {
-    height: 320px;
+    height: 240px;
   }
 
   .carousel__btn {
