@@ -37,36 +37,8 @@ export default function Header() {
       <div className="container site-header__inner">
         {/* Logo */}
         <a href="#" className="site-header__logo" aria-label="Rested Soul — home">
-          <svg
-            viewBox="0 0 700 170"
-            className="site-header__logo-img"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            {/* Leaf */}
-            <g fill="none" stroke="#4DB08C" strokeLinecap="round" strokeLinejoin="round">
-              <path
-                d="M80 8 C122 28,128 72,116 108 C104 138,82 160,80 162 C78 160,56 138,44 108 C32 72,38 28,80 8 Z"
-                fill="#4DB08C" fillOpacity="0.10" strokeWidth="2.5"
-              />
-              <path d="M80 14 C79 62,79 108,80 155" strokeWidth="2"/>
-              <path d="M80 62 C66 54,53 44,46 36" strokeWidth="1.5"/>
-              <path d="M80 62 C94 54,107 44,114 36" strokeWidth="1.5"/>
-              <path d="M80 95 C66 87,54 79,47 71" strokeWidth="1.5"/>
-              <path d="M80 95 C94 87,106 79,113 71" strokeWidth="1.5"/>
-            </g>
-            {/* Text */}
-            <text
-              x="168" y="112"
-              fontSize="54"
-              fontFamily="'Nunito', 'Poppins', Arial, sans-serif"
-              fontWeight="700"
-              fill="#7057C6"
-              letterSpacing="4"
-            >
-              RESTED SOUL
-            </text>
-          </svg>
+          <img src="/leaf.png" alt="" className="site-header__leaf" aria-hidden="true" />
+          <span className="site-header__logo-text">RESTED SOUL</span>
         </a>
 
         {/* Desktop nav */}

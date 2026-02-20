@@ -30,11 +30,20 @@
   text-decoration: none;
 }
 
-.site-header__logo-img {
-  height: 44px;
+.site-header__leaf {
+  height: 38px;
   width: auto;
-  max-width: 200px;
   display: block;
+  mix-blend-mode: multiply;
+}
+
+.site-header__logo-text {
+  font-family: 'Nunito', 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #7057C6;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
 }
 
 /* ── Desktop nav ──────────────────────────────────────────── */
