@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 680 170"
+  role="img"
+  aria-labelledby="logo-title"
+>
+  <title id="logo-title">Rested Soul</title>
+
+  <!-- Leaf -->
+  <g fill="none" stroke="#4DB08C" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Leaf body: pointed at top and bottom, widest in the middle -->
+    <path
+      d="M80 8
+         C122 28, 128 72, 116 108
+         C104 138, 82 160, 80 162
+         C78 160, 56 138, 44 108
+         C32 72, 38 28, 80 8 Z"
+      fill="#4DB08C"
+      fill-opacity="0.10"
+      stroke-width="2.5"
+    />
+
+    <!-- Central vein -->
+    <path d="M80 14 C79 62, 79 108, 80 155" stroke-width="2"/>
+
+    <!-- Upper veins -->
+    <path d="M80 62 C66 54, 53 44, 46 36" stroke-width="1.5"/>
+    <path d="M80 62 C94 54, 107 44, 114 36" stroke-width="1.5"/>
+
+    <!-- Lower veins -->
+    <path d="M80 95 C66 87, 54 79, 47 71" stroke-width="1.5"/>
+    <path d="M80 95 C94 87, 106 79, 113 71" stroke-width="1.5"/>
+
+  </g>
+
+  <!-- Brand text: exact brand purple, Cormorant Garamond to match site -->
+  <text
+    x="172"
+    y="108"
+    font-size="62"
+    font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif"
+    fill="#7057C6"
+    letter-spacing="2"
+  >Rested Soul</text>
+
+</svg>
