@@ -38,7 +38,7 @@ const passions = [
         <path d="M4.5 11.5A6 6 0 0 1 16 7.32V3l4 4-4 4V7.98A4 4 0 1 0 8.5 11.5H4.5zm15 1A6 6 0 0 1 8 16.68V21l-4-4 4-4v3.02A4 4 0 1 0 15.5 12.5h4z" fill="currentColor"/>
       </svg>
     ),
-    label: 'Hunter & Animals',
+    label: 'Animals',
   },
 ]
 
