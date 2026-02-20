@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Treatments from './components/Treatments'
 import About from './components/About'
+import PhotoCarousel from './components/PhotoCarousel'
 import FAQ from './components/FAQ'
 import Booking from './components/Booking'
 import Footer from './components/Footer'
@@ -17,6 +18,7 @@ export default function App() {
         <Hero />
         <Treatments />
         <About />
+        <PhotoCarousel />
         <Booking />
         <FAQ />
       </main>
