@@ -38,11 +38,9 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="site-header__logo" aria-label="Rested Soul — home">
           <img
-            src="/logo.png"
+            src="/logo-header.svg"
             alt="Rested Soul"
             className="site-header__logo-img"
-            width="66"
-            height="66"
           />
         </a>
 

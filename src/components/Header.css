@@ -31,8 +31,9 @@
 }
 
 .site-header__logo-img {
-  height: 66px;
+  height: 44px;
   width: auto;
+  max-width: 200px;
   display: block;
 }
 
