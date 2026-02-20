@@ -4,14 +4,51 @@ interface FaqItem {
   id: string
   question: string
   answer: React.ReactNode
-  isReal?: boolean
 }
 
 const faqs: FaqItem[] = [
   {
+    id: 'massage-types',
+    question: 'What type of massage do you offer?',
+    answer: (
+      <>
+        <p>The short answer: tailored massages.</p>
+        <p>
+          I don't advertise individual services the way many therapists do —
+          such as hot stones, Swedish, or deep tissue. Instead, I offer
+          customised sessions designed around your needs on the day
+          (consultation dependent).
+        </p>
+        <p>
+          Whether you need deeper pressure, gentle relaxation, focused work on
+          tight areas, or a blend of techniques, your massage is created
+          specifically for you.
+        </p>
+        <p>
+          Our bodies are unique, and on any given day we might need something
+          slightly different. That's exactly how I work.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: 'first-appointment',
+    question: 'What should I expect at my first appointment?',
+    answer: (
+      <>
+        <p>
+          Please arrive at the time of your appointment and I'll collect you
+          from the entrance area. We'll then head down to the massage room,
+          fill out a short consultation form, and discuss your expectations and
+          any areas of tension.
+        </p>
+        <p>Then you simply relax while I take care of the rest.</p>
+      </>
+    ),
+  },
+  {
     id: 'how-often',
     question: 'How often should I get a massage?',
-    isReal: true,
     answer: (
       <>
         <p>It's entirely a personal choice.</p>
@@ -24,18 +61,6 @@ const faqs: FaqItem[] = [
         </ul>
         <p>Your body will always tell you what it needs.</p>
       </>
-    ),
-  },
-  {
-    id: 'first-appointment',
-    question: 'What happens at my first appointment?',
-    answer: (
-      <p>
-        [Placeholder — e.g. We'll start with a short consultation to discuss
-        your health history, any areas of concern, and what you're hoping to
-        get from the session. Everything you share is confidential and helps me
-        tailor the treatment specifically to you.]
-      </p>
     ),
   },
   {
