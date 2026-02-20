@@ -17,23 +17,7 @@ export default function Booking() {
           </p>
         </div>
 
-        {/* Acuity embed placeholder */}
-        <div className="booking__embed-wrapper" role="region" aria-label="Online booking system (coming soon)">
-          <div className="booking__embed-placeholder">
-            <div className="booking__embed-icon" aria-hidden="true">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="4" width="18" height="18" rx="3" stroke="#7057C6" strokeWidth="1.8" fill="none"/>
-                <path d="M3 9h18" stroke="#7057C6" strokeWidth="1.8"/>
-                <path d="M8 2v4M16 2v4" stroke="#7057C6" strokeWidth="1.8" strokeLinecap="round"/>
-                <path d="M7 13h2M11 13h2M15 13h2M7 17h2M11 17h2" stroke="#7057C6" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
-            </div>
-            <p className="booking__embed-label">Acuity Scheduling embed will go here</p>
-            <p className="booking__embed-note">
-              Replace this block with your Acuity embed code once your account is configured.
-            </p>
-          </div>
-        </div>
+        {/* TODO: Acuity embed goes here once configured */}
 
         {/* Opening times & contact CTA */}
         <div className="booking__contact-row">

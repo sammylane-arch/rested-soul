@@ -40,8 +40,8 @@ export default function Header() {
             src="/logo.png"
             alt="Rested Soul"
             className="site-header__logo-img"
-            width="52"
-            height="52"
+            width="66"
+            height="66"
           />
         </a>
 

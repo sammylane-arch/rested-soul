@@ -13,8 +13,8 @@ export default function Footer() {
               src="/logo.png"
               alt="Rested Soul"
               className="site-footer__logo-img"
-              width="88"
-              height="88"
+              width="120"
+              height="120"
             />
           </a>
           <p className="site-footer__tagline">
