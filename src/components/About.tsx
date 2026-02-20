@@ -7,6 +7,41 @@ const credentials = [
   { label: 'Insurance', value: 'Fully insured' },
 ]
 
+const passions = [
+  {
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 14.2c-2.5 0-4.7-1.3-6-3.2.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1c-1.3 1.9-3.5 3.2-6 3.2z" fill="currentColor"/>
+      </svg>
+    ),
+    label: 'Meditation',
+  },
+  {
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7" fill="currentColor"/>
+      </svg>
+    ),
+    label: 'Movement',
+  },
+  {
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M17 8C8 10 5.9 16.17 3.82 22H5.2c.5-1.32 1.14-2.62 2-3.8C9.67 20 14 19 17 17c0 0-3-2-3-6 0 0 4 1 6-2 0 0-3-1-3-5 3 0 5 2 5 2s0-5-5-7c0 0-1 3-5 4C9 5 7 7 7 7s2 1 3 3c0 0-3 0-5-2 0 2 1 6 5 8 0 0-1 1-1 2 3.5-.5 6.5-2 9-6" fill="currentColor"/>
+      </svg>
+    ),
+    label: 'Nature',
+  },
+  {
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4.5 11.5A6 6 0 0 1 16 7.32V3l4 4-4 4V7.98A4 4 0 1 0 8.5 11.5H4.5zm15 1A6 6 0 0 1 8 16.68V21l-4-4 4-4v3.02A4 4 0 1 0 15.5 12.5h4z" fill="currentColor"/>
+      </svg>
+    ),
+    label: 'Animals',
+  },
+]
+
 export default function About() {
   return (
     <section id="about" className="about section" aria-labelledby="about-heading">
@@ -17,35 +52,48 @@ export default function About() {
           <h2 className="section-heading" id="about-heading">
             About Steph
           </h2>
+          <p className="about__title">Qualified Holistic Therapist</p>
 
           <p className="about__intro">
-            Hi, I'm Steph — a qualified massage therapist with{' '}
-            <strong>[X] years of experience</strong> helping people feel more
-            comfortable in their bodies.
+            Hi, I'm Steph — a holistic therapist with{' '}
+            <strong>[X] years of experience</strong> who believes deeply in the
+            power of healing through touch. My work is built around creating
+            treatments that are calm, intuitive, and genuinely tailored to you.
           </p>
 
           <p>
             I trained at <em>[training institution]</em> and hold a{' '}
-            <em>[qualification level]</em> in massage therapy. I've since worked
-            with clients ranging from busy professionals carrying desk-related
-            tension to active individuals managing sports-related muscle fatigue.
+            <em>[qualification level]</em> in holistic therapy. Over the years
+            I've worked with clients from all walks of life — from those
+            carrying the quiet weight of everyday stress to people seeking
+            support for more persistent physical tension.
           </p>
 
           <p>
-            My approach is always led by you. Every session begins with a brief
-            consultation so I can understand what you need — whether that's
-            deep relaxation, targeted relief from persistent tension, or
-            something in between. There's no one-size-fits-all here.
+            My approach is shaped by a genuine love of wellbeing in its
+            broadest sense. I draw on an appreciation for mindfulness,
+            movement, and the restorative qualities of the natural world to
+            inform how I work — always listening, always adapting, never
+            prescriptive.
           </p>
 
           <p>
-            I believe that regular massage can play a meaningful role in
-            general wellbeing, and I'm committed to providing a safe, calm,
-            and professional environment for every client.
+            Every session begins with a conversation. What you need on the
+            day guides everything — there's no rigid formula, just thoughtful,
+            attentive care.
           </p>
+
+          <ul className="about__passions" role="list" aria-label="Steph's interests and values">
+            {passions.map(({ icon, label }) => (
+              <li key={label} className="about__passion-tag">
+                {icon}
+                <span>{label}</span>
+              </li>
+            ))}
+          </ul>
 
           <a href="#booking" className="btn btn-outline about__cta">
-            Read more
+            Book a session
           </a>
         </div>
 
@@ -58,7 +106,8 @@ export default function About() {
                 <circle cx="24" cy="19" r="9" fill="#7057C6" opacity="0.35"/>
                 <path d="M8 42c0-8.8 7.2-16 16-16s16 7.2 16 16" fill="#7057C6" opacity="0.2"/>
               </svg>
-              <p className="about__avatar-label">Photo coming soon</p>
+              <p className="about__avatar-name">Steph</p>
+              <p className="about__avatar-label">Qualified Holistic Therapist</p>
             </div>
 
             <div className="about__credentials-divider" aria-hidden="true" />
