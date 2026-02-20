@@ -17,8 +17,8 @@ export default function App() {
         <Hero />
         <Treatments />
         <About />
-        <FAQ />
         <Booking />
+        <FAQ />
       </main>
       <Footer />
     </>

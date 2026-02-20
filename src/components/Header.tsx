@@ -4,10 +4,10 @@ import './Header.css'
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Treatments', href: '#treatments' },
-  { label: 'FAQ', href: '#faq' },
   { label: 'Opening Times', href: '#opening-times' },
   { label: 'Location', href: '#location' },
   { label: 'Contact', href: '#contact' },
+  { label: 'FAQ', href: '#faq' },
 ]
 
 export default function Header() {
