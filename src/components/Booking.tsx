@@ -14,7 +14,7 @@ export default function Booking() {
             We're setting up our online booking system to make things as easy
             as possible. In the meantime, if you're curious about booking a
             session or just want to ask a question, don't hesitate to get in
-            touch — we'd love to hear from you.
+            touch. We'd love to hear from you.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function Booking() {
               <li><span>Sunday</span><span>By arrangement</span></li>
             </ul>
             <p className="booking__hours-note">
-              Evening and early morning appointments may be available — please enquire.
+              Evening and early morning appointments may be available. Just ask.
             </p>
           </div>
 

@@ -14,7 +14,7 @@ const faqs: FaqItem[] = [
       <>
         <p>The short answer: tailored massages.</p>
         <p>
-          I don't advertise individual services the way many therapists do —
+          I don't advertise individual services the way many therapists do,
           such as hot stones, Swedish, or deep tissue. Instead, I offer
           customised sessions designed around your needs on the day
           (consultation dependent).
@@ -68,7 +68,7 @@ const faqs: FaqItem[] = [
     question: 'What should I wear?',
     answer: (
       <p>
-        [Placeholder — e.g. You'll be covered with a sheet or towel throughout
+        [Placeholder: e.g. You'll be covered with a sheet or towel throughout
         the session and only the area being worked on will be uncovered.
         Comfortable, loose clothing to change into afterwards is recommended.]
       </p>
@@ -79,9 +79,9 @@ const faqs: FaqItem[] = [
     question: 'Is there anything I should do before or after a session?',
     answer: (
       <p>
-        [Placeholder — e.g. Try to avoid a large meal in the hour before your
+        [Placeholder: e.g. Try to avoid a large meal in the hour before your
         appointment. Afterwards, drink plenty of water and take it easy if you
-        can — your body may continue to release tension for a little while.]
+        can. Your body may continue to release tension for a little while.]
       </p>
     ),
   },
@@ -90,7 +90,7 @@ const faqs: FaqItem[] = [
     question: 'Can I have a massage if I have a medical condition?',
     answer: (
       <p>
-        [Placeholder — e.g. In many cases, yes — but please let me know in
+        [Placeholder: e.g. In many cases, yes, but please let me know in
         advance. There are some conditions where massage may need to be adapted
         or avoided. I'll always review your health intake form before we begin
         and discuss anything relevant with you.]
@@ -110,7 +110,7 @@ export default function FAQ() {
           </h2>
           <p className="section-subheading">
             Can't find what you're looking for? Feel free to get in touch
-            directly — we're always happy to help.
+            directly. We're always happy to help.
           </p>
         </div>
 

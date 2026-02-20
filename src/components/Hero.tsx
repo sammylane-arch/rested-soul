@@ -48,7 +48,7 @@ export default function Hero() {
 
           <p className="hero__subheading">
             A safe, soothing space to relax, recharge, and feel genuinely
-            cared for. Every session is tailored to you — led by what you need
+            cared for. Every session is tailored to you, built around what you need
             on the day.
           </p>
 

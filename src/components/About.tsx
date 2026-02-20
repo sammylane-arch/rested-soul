@@ -55,7 +55,7 @@ export default function About() {
           <p className="about__title">Qualified Holistic Therapist</p>
 
           <p className="about__intro">
-            Hi, I'm Steph — a professionally qualified massage therapist with
+            Hi, I'm Steph, a professionally qualified massage therapist with
             a lifelong love for healing and the power of therapeutic touch.
             From a young age I felt a natural pull towards this work, but like
             many people, self-doubt held me back for a while. That all changed
@@ -66,8 +66,8 @@ export default function About() {
           <p>
             I trained at <em>[training institution]</em> and hold a{' '}
             <em>[qualification level]</em>. Since then I've been building my
-            experience, growing my client base, and expanding my qualifications
-            — and I'm only just getting started.
+            experience, growing my client base, and expanding my qualifications.
+            I'm only just getting started.
           </p>
 
           <p>
@@ -79,8 +79,8 @@ export default function About() {
 
           <p>
             Outside the treatment room you'll find me meditating, working out,
-            spending time in nature, or on mum duties to my furbaby Hunter —
-            practices that keep me grounded and shape the care I bring to every
+            spending time in nature, or on mum duties to my furbaby Hunter.
+            It's what keeps me grounded and shapes the care I bring to every
             session.
           </p>
 

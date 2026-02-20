@@ -28,7 +28,7 @@ export default function Footer() {
           <address className="site-footer__address">
             <p>[Town / Area], [County]</p>
             <p>[Postcode area]</p>
-            <p>Home visits and clinic appointments available — please enquire.</p>
+            <p>Home visits and clinic appointments available. Please get in touch.</p>
           </address>
         </div>
 

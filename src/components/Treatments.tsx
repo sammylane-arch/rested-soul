@@ -68,7 +68,7 @@ export default function Treatments() {
             Treatments
           </h2>
           <p className="section-subheading">
-            Each session is tailored to your individual needs — no two massages
+            Each session is tailored to your individual needs. No two massages
             are the same. Please discuss any preferences or health considerations
             at the time of booking.
           </p>
