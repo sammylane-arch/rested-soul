@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './PhotoCarousel.css'
 
 const photos = [
-  { src: '/steph_1.jpg', alt: 'Steph, Qualified Holistic Therapist at Rested Soul' },
-  // Add more photos here: { src: '/photo2.jpg', alt: '...' },
+  { src: '/carousel/steph_1.jpg', alt: 'Steph, Qualified Holistic Therapist at Rested Soul' },
+  // Drop any image into public/carousel/ and add it here: { src: '/carousel/photo2.jpg', alt: '...' },
 ]
 
 export default function PhotoCarousel() {
