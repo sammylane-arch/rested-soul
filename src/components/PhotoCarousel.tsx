@@ -1,16 +1,36 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './PhotoCarousel.css'
 
 const photos = [
-  { src: '/carousel/steph_1.jpg', alt: 'Steph, Qualified Holistic Therapist at Rested Soul' },
+  { src: '/carousel/steph_2.jpg', alt: 'Steph, Qualified Holistic Therapist at Rested Soul' },
+  { src: '/carousel/steph_3.jpg', alt: 'Steph and Hunter' },
+  { src: '/carousel/steph_5.jpg', alt: 'Crystal Healing' },
+  { src: '/carousel/steph_6.jpg', alt: 'Crystal Healing Session' },
+  { src: '/carousel/steph_7.jpg', alt: 'Indian Head Massage' },
   // Drop any image into public/carousel/ and add it here: { src: '/carousel/photo2.jpg', alt: '...' },
 ]
 
+const INTERVAL_MS = 4000
+
 export default function PhotoCarousel() {
   const [current, setCurrent] = useState(0)
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
-  const prev = () => setCurrent((i) => (i - 1 + photos.length) % photos.length)
-  const next = () => setCurrent((i) => (i + 1) % photos.length)
+  const resetTimer = () => {
+    if (timerRef.current) clearInterval(timerRef.current)
+    timerRef.current = setInterval(() => {
+      setCurrent((i) => (i + 1) % photos.length)
+    }, INTERVAL_MS)
+  }
+
+  useEffect(() => {
+    resetTimer()
+    return () => { if (timerRef.current) clearInterval(timerRef.current) }
+  }, [])
+
+  const prev = () => { setCurrent((i) => (i - 1 + photos.length) % photos.length); resetTimer() }
+  const next = () => { setCurrent((i) => (i + 1) % photos.length); resetTimer() }
+  const goTo = (i: number) => { setCurrent(i); resetTimer() }
 
   return (
     <section className="carousel section" aria-label="Photo gallery">
@@ -57,7 +77,7 @@ export default function PhotoCarousel() {
                     aria-selected={i === current}
                     aria-label={`Photo ${i + 1}`}
                     className={`carousel__dot${i === current ? ' is-active' : ''}`}
-                    onClick={() => setCurrent(i)}
+                    onClick={() => goTo(i)}
                   />
                 ))}
               </div>
